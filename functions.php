@@ -23,3 +23,22 @@ function antt_enqueue_scripts()
     wp_enqueue_script('bootstrap', $uri . '/js/bootstrap.js');
 }
 add_action('wp_enqueue_scripts', 'antt_enqueue_scripts');
+
+
+
+
+//Menus:
+
+function hheads_menus(){
+$location = array(
+    'primary' => "top horizontal menu",
+  
+    
+);
+register_nav_menus($location);
+
+}
+
+add_action('init', 'hheads_menus');
+
+?>
