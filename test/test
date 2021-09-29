@@ -1,0 +1,474 @@
+
+
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+
+	<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+	 //<link href="css/style.css" rel="stylesheet" type="text/css" /> 
+	< !-- <script src="js/jquery.js"></script>-- > 
+
+    < ?php wp_head )( ; ? >
+
+</head>
+
+ Navigation Block -- >
+
+<body id="page-top">
+        < !-- Navigation-- >
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+            <div class="container px-5">
+                <a class="navbar-brand fw-bold" href="#page-top">Happyheads</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#Home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#shop">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#cart">Cart</a></li>
+						<div class="col-sm-6 hidden-xs">
+					< ?php get_search_form ( ); ?>
+					</div>
+					<div class="col-xs-4 text-right visible-xs">
+						<div class="mobile-menu-wrap">
+							<i class="fa fa-search"></i>
+							<i class="fa fa-bars menu-icon"></i>
+						</div>
+					</div>
+                    </ul>
+					<div class="mobile-search">
+		< ?php get_search_form( ); ?>
+		</div>
+                    <button class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0" data-bs-toggle="modal" data-bs-target="#feedbackModal">
+                        <span class="d-flex align-items-center">
+                            <i class="bi-chat-text-fill me-2"></i>
+                            <span class="small">Sign In/Register</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+
+
+< !-- Navigation Block END 
+
+
+:::::::::::::::
+
+
+
+
+    <section id="blog" class="blog_area pt-120 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Recent Blog</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> < !-- section title -- >
+                    </div>
+            </div> < !-- row -- >
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single_blog mt-30 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-1.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor .</a></h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.Lorem ipsum dolor sit amet, conse sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .Lorem ipsum dolor sit amet, consetetur sadipscing elit.</p>
+                        </div>
+                    </div> < !-- single blog -- >
+                </div>
+                <div class="col-lg-6">
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.2s">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-2.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> < !-- single blog -- >
+                    
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.3s">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-3.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> < !-- single blog -- >
+                    
+                    <div class="single_blog blog_2 d-sm-flex mt-30 wow fadeInUp" data-wow-duration="1.3s"
+                        data-wow-delay="0.4s">
+                        <div class="blog_image">
+                            <img src="assets/images/blog-4.jpg" alt="blog">
+                        </div>
+                        <div class="blog_content media-body">
+                            <h3 class="blog_title"><a href="#0">Lorem ipsum dolor sit amet, consetetur sadipscing .</a></h3>
+                            <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diam.</p>
+                            <a href="#0" class="more">Read More</a>
+                        </div>
+                    </div> < !-- single blog -- >
+                </div>
+            </div> < !-- row - ->
+        </div> < !-- container -- 
+    </section>
+
+    <! --====== BLOG PART ENDS ======-->
+    
+    <!--====== CONTACT PART START ======-- >
+
+    <section id="contact" class="contact_area bg_cover pt-120 pb-130" style="background-image: url(assets/images/contact_bg.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title section_title_2 text-center pb-25">
+                        <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Contact Us</h4>
+                        <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
+                            amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
+                    </div> < !-- section title - ->
+                </div>
+            </div> <! -- row -- >
+            
+            <form id="contact-form" action="assets/contact.php" method="post" class="wow fadeInUp"
+                data-wow-duration="1.3s" data-wow-delay="0.4s">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Name" name="name" id="name" required>
+                        </div> < !-- single form -- >
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="email" placeholder="Email" name="email" id="email" required>
+                        </div> <! -- single form -- 
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Phone Number" name="number" id="number" required>
+                        </div> < !-- single form -- >
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single_form">
+                            <input type="text" placeholder="Subject" name="subject" id="subject" required>
+                        </div> < !-- single form -- >
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="single_form">
+                            <textarea placeholder="Message" name="message" id="message" required></textarea>
+                        </div> < !-- single form -- >
+                    </div>
+                    
+                    <p class="form-message"></p>
+                    
+                    <div class="col-lg-12">
+                        <div class="single_form text-center">
+                            <button class="main-btn" type="submit">SUBMIT</button>
+                        </div> < !-- single form -- >
+                    </div>
+                </div> < !-- row -- >
+            </form>
+        </div> < !-- container -- >
+    </section>
+
+    < !--====== CONTACT PART ENDS ======-->
+    
+    <!--====== FOOTER PART START ======-- >
+
+    <footer id="footer" class="footer_area">
+        <div class="container">
+            <div class="footer_wrapper text-center d-lg-flex align-items-center justify-content-between">
+                <p class="credit">Designed and Developed by <a href="https://uideck.com" rel="nofollow">UIdeck</a></p>
+                <div class="footer_social pt-15">
+                    <ul>
+                        <li><a href="#0"><i class="lni lni-facebook-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-twitter-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-instagram-original"></i></a></li>
+                        <li><a href="#0"><i class="lni lni-linkedin-original"></i></a></li>
+                    </ul>
+                </div> < !-- footer social -- >
+            </div> < !-- footer wrapper -- >
+        </div> <! -- container -- >
+    </footer>
+
+    < !--====== FOOTER PART ENDS ======-->
+    
+    <!--====== BACK TOP TOP PART START ======-- >
+
+    <a href="#" class="back-to-top"><i class="lni lni-chevron-up"></i></a>
+
+    < !--====== BACK TOP TOP PART ENDS ======-- >
+
+    
+    < !--====== Bootstrap js ======-- >
+    <script src="assets/js/bootstrap.bundle-5.0.0-beta1.min.js"></script>
+    
+    < !--====== glide js ======- ->
+    <script src="assets/js/tiny-slider.js"></script>
+    
+    < !--====== wow js ======-- >
+    <script src="assets/js/wow.min.js"></script>
+    
+    <! --====== Main js ======-- >
+    <script src="assets/js/main.js"></script>
+    
+</body>
+
+</html>
+
+
+:::::::::
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Search Template</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,500,500i">
+   <!--      <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css"> -->
+       <!--  <link rel="stylesheet" href="assets/css/animate.css"> -->
+      
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-- >
+
+        <! -- Favicon and touch icons -- >
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+		
+		< !-- Top menu -- >
+		<nav class="navbar navbar-inverse" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Happyheads</a>
+				</div>
+				< !-- Collect the nav links, forms, and other content for toggling -- >
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right navbar-search-button">
+						<li><a class="search-button" href="#"><i class="fa fa-search"></i></a></li>
+					</ul>
+					<form class="navbar-form navbar-right navbar-search-form disabled wow fadeInLeft" role="form" action="" method="post">
+						<div class="form-group">
+							<input type="text" name="search" placeholder="Search..." class="search form-control">
+						</div>
+					</form>
+					<ul class="nav navbar-nav navbar-right navbar-menu-items wow fadeIn">
+						<li><a href="#">Home wp_nav_menu...</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Shop</a></li>
+						<li><a href="#">Cart</a></li>
+						<li><a href="#">Sign In/Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        < !-- Top content -- >
+        <div class="top-content">
+            <div class="container">
+            	
+                <div class="row">
+                    <div class="col-sm-12 text wow fadeInLeft">
+                        <h1><strong>Happyheads</strong></h1>
+                        <div class="description">
+                        	<p class="medium-paragraph">
+                         	Get ahead!
+                        	</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        < !-- Features -->
+        <div class="features-container section-container">
+	        <div class="container">
+	        	
+	            <div class="row">
+	                <div class="col-sm-12 features section-description wow fadeIn">
+	                    <h2>search bar</h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-cloud"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>ut wisi enim ad minim</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-instagram"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>sed do eiusmod tempor</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+	            
+	            <div class="row">
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-paperclip"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>quis nostrud exerci tat</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box wow fadeInLeft">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-twitter"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>minim veniam quis nostrud</h3>
+		                    	<p>
+		                    		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et.
+		                    		Ut wisi enim ad minim veniam, quis nostrud.
+		                    	</p>
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+
+	        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+	        <div class="container">
+	        	<div class="row">
+	        		<div class="col-sm-12 footer-copyright">
+                    	&copy; <a href="">Happyheads</a>
+                    </div>
+                </div>
+	        </div>
+        </footer>
+
+
+        <!-- Javascript -->
+     <!--    <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script> -->
+       <!--  <script src="js/scripts.js"></script> -->
+        
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
+
+
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+                        <h1><?php the_title(); ?></h1>
+                        <h4>Posted on <?php the_time('F jS, Y') ?></h4>
+                        <p><?php the_content(__('(more...)')); ?></p>
+                    </div>
+
+
+                <?php endwhile;
+            else : ?>
+                <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+            <?php endif; ?>
+        </div>
+
+        <ul class="products">
+            <?php
+            $args = array(
+                'post_type' => 'product',
+                'posts_per_page' => 12
+            );
+            $loop = new WP_Query($args);
+            if ($loop->have_posts()) {
+                while ($loop->have_posts()) : $loop->the_post();
+                    wc_get_template_part('content', 'product');
+                endwhile;
+            } else {
+                echo __('No products found');
+            }
+            wp_reset_postdata();
+            ?>
+        </ul>
+
+
+
+
+
+
+
+-->
+
+
+
+
+
+

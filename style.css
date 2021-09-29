@@ -1,5 +1,75 @@
 /* 
-Theme Name: Grupp 3: Happy Heads
+Theme Name: test: Happy Heads
 Author: Noreen Fuad, Adam Kollberg, Thomas Olsson, Tove Platell
 Version: 1.0
 */
+
+
+/* ============Login & Registration: ==========*/
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.login,
+.image {
+  min-height: 100vh;
+}
+
+.bg-image {
+  background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+/* ============Icon: ==========*/
+
+.homeicon {
+  background-image: url('http://www.example.com/wp-content/uploads/2018/09/home.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 5px;
+  }
+
+  /* ============Icon End: ==========*/
+
+
+    /* ============Header: ==========*/
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+			 .link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;}

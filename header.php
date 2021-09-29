@@ -4,56 +4,42 @@
 	<meta charset="UTF-8" />
 
 	
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<script src="js/bootstrap.js"></script>
+
 
     <?php wp_head(); ?>
 
 </head>
-<body <?php body_class(); ?>>
-    <div class="container">
+<body class= 'woocommerce'>
+ <!-- Navigation-->
+<nav class="shadow p-3 mb-5 bg-body rounded navbar navbar-expand-lg navbar-light" style="background-color: #adb5bd;">
 
-
-	<div id="wrap">
-
-		<header id="header">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-8 col-sm-6">
-						<a class="logo" href=<?php site_url();?>>Happyheads</a>
-					</div>
-					<div class="col-sm-6 hidden-xs">
-					<?php get_search_form(); ?>
-					</div>
-					<div class="col-xs-4 text-right visible-xs">
-						<div class="mobile-menu-wrap">
-							<i class="fa fa-search"></i>
-							<i class="fa fa-bars menu-icon"></i>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<div class="mobile-search">
-		<?php get_search_form(); ?>
-		</div>
-
-		<nav id="nav">
-			<div class="container">
-				<div class="row">
-					<div class="col-xs-12">
-
-					<?php  
+<div class="container-fluid">
+    <a class="navbar-brand" href="<?php site_url('/')?>">Happyheads</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+	<div class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+	<?php  
 					wp_nav_menu(
 						array(
-						'container' => 'ul',
 						'menu_class' => 'menu',
-						'theme_location' => 'primary'
+						'theme_location' => 'primary',
+						'container' => 'ul',
 						));
 					?>
-
-					</div>
+                    </div>
+    
+       
+					
 				</div>
-			</div>
-		</nav>
+				
+				
+				<ul class="nav navbar-nav navbar-right navbar-search-button">	
+</ul>
+			<form class="d-flex">
+			<?php get_search_form(); ?>
+			</form>
+			
+</nav>
+
