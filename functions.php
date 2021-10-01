@@ -50,7 +50,37 @@ register_nav_menus($location);
 add_action('init', 'antt_menus');
 
 
-
+// Our custom post type function
+function create_posttype() {
+ 
+    register_post_type( 'stores',
+    // CPT Options
+        array(
+            'labels' => array(
+                'name' => __( 'Stores' ),
+                'singular_name' => __( 'Store' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'stores'),
+            'show_in_rest' => true,
+  
+        )
+    );
+  }
+  // Hooking up our function to theme setup
+  add_action( 'init', 'create_posttype' );
+  
+  
+  
+  
+  
+  add_filter( 'woocommerce_product_add_to_cart_text', 'woocommerce_custom_product_add_to_cart_text' );  
+  function woocommerce_custom_product_add_to_cart_text() {
+      return __( 'Köp nu', 'woocommerce' );
+  }
+  
+  
 
 function antt_widgets_init() {
 

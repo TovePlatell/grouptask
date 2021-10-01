@@ -11,10 +11,10 @@
 </head>
 <body class= 'woocommerce'>
  <!-- Navigation-->
-<nav class="shadow p-3 mb-5 bg-body rounded navbar navbar-expand-lg navbar-light" style="background-color: #adb5bd;">
+<nav class="shadow p-3 mb-5 bg-body rounded navbar navbar-expand-lg navbar-light" style="background-color: secondary;">
 
 <div class="container-fluid">
-    <a class="navbar-brand" href="<?php site_url('/')?>">Happyheads</a>
+    <a id= navbar-brand-id class="navbar-brand" href="<?php site_url('/')?>">Happyheads</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,7 +23,7 @@
 	<?php  
 					wp_nav_menu(
 						array(
-						'menu_class' => 'menu',
+						'menu_class' => 'primary-menu',
 						'theme_location' => 'primary',
 						'container' => 'ul',
 						));
@@ -35,8 +35,8 @@
 				</div>
 				
 				
-				<ul class="nav navbar-nav navbar-right navbar-search-button">	
-</ul>
+				<p class="nav navbar-nav navbar-right navbar-search-button">	
+</p>
 			<form class="d-flex">
 			<?php get_search_form(); ?>
 			</form>
