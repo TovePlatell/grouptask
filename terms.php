@@ -1,24 +1,29 @@
+<?php /* Template Name: terms */ ?>
 
-<?php
-/* Template Name: Terms */
+<!DOCTYPE html>
+<html>
 
-get_header();
+<head>
+    <?php wp_head(); ?>
+</head>
 
-?>
+<body>
 
-<!-- wp:heading -->
-<h2>Våra villkor</h2>
-<!-- /wp:heading -->
+    <div id="wrap">
 
-<div class="col-sm-9">
-<!-- wp:paragraph -->
-<?php the_content(); ?>
+        <?php get_header(); ?>
 
-</div>
-<!-- /wp:paragraph -->
+        <div class="hero">
+            <h1>Villkor</h1>
+        </div>
 
-<!-- wp:paragraph -->
+        <?php
+    if (have_posts()) :
+        while (have_posts()) : the_post(); ?>
+        <?php the_content(); ?>
+        <?php
+        endwhile;
+    endif;
+    ?>
 
-<!-- /wp:paragraph -->
-
-<?php get_footer(); ?>
+        <?php get_footer(); ?>
