@@ -5,10 +5,7 @@ function customtheme_add_woocommerce_support()
 }
 add_action('after_setup_theme', 'customtheme_add_woocommerce_support');
 
-// Enqueue styles
-
-
-//Enqueue:
+// Enqueue styles Enqueue:
 
 
     
@@ -39,7 +36,7 @@ add_action('wp_enqueue_scripts', 'antt_enqueue_scripts');
 function antt_menus(){
 $location = array(
     'primary' => "top horizontal menu",
-    
+  'footer' => "footer menu",  
   
     
 );
@@ -81,8 +78,12 @@ function create_posttype() {
   }
   
   
+ 
+    
 
-function antt_widgets_init() {
+
+
+/* function antt_widgets_init() {
 
     register_sidebar( array(
         'name' => 'Home right sidebar',
@@ -93,9 +94,56 @@ function antt_widgets_init() {
         'after_title' => '</h2>',
     ) );
 }
+add_action( 'widgets_init', 'antt_widgets_init' ); */
+
+
+
+
+function antt_features() {
+ /*    register_nav_menu('header_nav_menu', 'Header Nav Menu'); */
+    register_nav_menu('side_nav_menu', 'Side Nav Menu');
+    add_theme_support('title-tag');
+    add_theme_support('widgets');
+  
+    
+}
+
+add_action('after_setup_theme', 'get_site_features');
+
+
+function antt_widgets_init() {
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'happyheads' ),
+		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'happyheads' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'happyheads' ),
+		'id'            => 'sidebar-2',
+		'description'   => esc_html__( 'Add widgets here.', 'happyheads' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Sidebar', 'happyheads' ),
+		'id'            => 'sidebar-3',
+		'description'   => esc_html__( 'Add widgets here.', 'happyheads' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+}
 add_action( 'widgets_init', 'antt_widgets_init' );
 
 
+
+
 ?>
-
-

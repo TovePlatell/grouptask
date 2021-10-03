@@ -5,50 +5,101 @@ Version: 1.0
 */
 
 
-/* ============Login & Registration: ==========*/
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+html, body {
+	padding: 0;
+	margin: 0;
+	}
+html {
+	font-size: 1em;
+	}
+body {
+	font-size: 100%;
+	}
+a img, :link img, :visited img {
+	border: 0;
+	}
 
-/*
-*
-* ==========================================
-* CUSTOM UTIL CLASSES
-* ==========================================
-*
-*/
-.login,
-.image {
-  min-height: 100vh;
+
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #444;
+  
 }
 
-.bg-image {
-  background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
-  background-size: cover;
-  background-position: center center;
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9eccf4;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: "Raleway", sans-serif;
 }
 
 
-/* ============Icon: ==========*/
 
-.homeicon {
-  background-image: url('http://www.example.com/wp-content/uploads/2018/09/home.png');
-  background-repeat: no-repeat;
-  background-position: left;
-  padding-left: 5px;
-  }
 
-  /* ============Icon End: ==========*/
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: #f5f9fc;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5c768d;
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+.wp-block-group {
+  padding: 0 1rem;
+  
+}
+
+
+/***** General style, all sections *****/
+
+.section-container { margin: 0 auto; padding-bottom: 80px; }
+.section-description { margin-top: 60px; padding-bottom: 10px; }
+.section-description p { margin-top: 20px; padding: 0 120px; }
+
 
 
 /* ============Header: ==========*/
 
 
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: #263238;
   line-height: 30px;
   text-align: center;
-}
+} */
 
 strong { font-weight: 500; }
 
@@ -70,12 +121,6 @@ img { max-width: 100%; }
 ::selection { background: #263238; color: #fff; text-shadow: none; }
 
 
-/***** General style, all sections *****/
-
-.section-container { margin: 0 auto; padding-bottom: 80px; }
-.section-description { margin-top: 60px; padding-bottom: 10px; }
-.section-description p { margin-top: 20px; padding: 0 120px; }
-
 
 /***** Divider *****/
 
@@ -85,15 +130,19 @@ img { max-width: 100%; }
 
 /***** Top menu *****/
 
-.navbar { margin-bottom: 0; background: #fff; border: 0; border-radius: 0; }
 
+/*DO NOT ERASE::::*/
 #menu-primary {
   margin: 0; padding: 0; 
 	list-style-type: none; list-style-image: none;
-
-   /*  list-style: none; */
-
+  
+  /*  list-style: none; */
+  
 }
+/*End->DO NOT ERASE::::*/
+
+.navbar { margin-bottom: 0; background: #fff; border: 0; border-radius: 0; }
+
 
 #menu-primary li {display: inline; padding: 5px 20px 5px 20px}
 
@@ -139,24 +188,6 @@ outline: 0; background: none; border: 0;
 
 #navbar-brand-id { color: #888}
 
-/***** Top content *****/
-
-.top-content { padding: 70px 0 160px 0; }
-
-.top-content .text { padding-top: 60px; color: #fff; }
-.top-content .text h1 { margin-top: 25px; color: #fff; }
-
-.top-content .description { margin: 30px 0 10px 0; }
-.top-content .description p { opacity: 0.8; }
-.top-content .description a { color: #fff; border-bottom: 1px dotted #fff; }
-.top-content .description a:hover, .top-content .description a:focus { color: #fff; border: 0; }
- 
-
-/***** Features *****/
-
-.features-box { margin-top: 30px; text-align: left; }
-.features-box .features-box-icon { font-size: 60px; color: #263238; line-height: 60px; text-align: center; }
-.features-box h3 { margin-top: 0; padding: 0 0 10px 0; }
 
 
 /***** Footer *****/
@@ -263,7 +294,7 @@ only screen and (                min-resolution: 2dppx) {
 
 
 
-    /* ============Header: ==========*/
+ 
 
 /*======================
     404 page
@@ -300,3 +331,16 @@ only screen and (                min-resolution: 2dppx) {
 	.contant_box_404{ margin-top:-50px;}
 
 
+#sidebar ul {
+  list-style: none;
+}
+
+.categories ul {
+  padding: 0;
+}
+
+.blog-article img {
+  height: 400px;
+    width: 100%;
+    object-fit: cover;
+}

@@ -3,6 +3,10 @@
 /* Template Name: Blog */
 ?>
 
+
+
+<?php get_header() ?>
+
 <main>
   <section>
     <div class="container">
@@ -12,7 +16,7 @@
           <?php while(have_posts()){ 
                 the_post()
               ?> 
-            <article>
+            <article class="blog-article">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>"/>
                 <h2 class="title">
                     <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
@@ -37,19 +41,17 @@
         </div>
         <aside id="secondary" class="col-xs-12 col-md-3">
           <div id="sidebar">
-           
+            <ul>
+              <li>
+              <?php get_search_form();?>
+              </li>
+            </ul>
             <ul role="navigation">
-           <!--    <h2>Pages</h2>
-              < ?php  wp_nav_menu([
-							'theme_location' => 'side_nav_menu',
-              'menu_class' => 'side-menu',
-              'menu_id' => 'blog-side-menu',
-						]) ?> -->
-            <!--     <h2>Arkiv</h2>
-              < ? php get_archives();?>
+                <h2>Arkiv</h2>
+              <?php get_archives();?>
               <li class="categories">
                 <h2>Kategorier</h2>
-                <ul> -->
+                <ul>
                 <?php
                 $categories = get_categories( array(
                     'orderby' => 'name',

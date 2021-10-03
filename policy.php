@@ -1,4 +1,4 @@
-<?php /* Template Name: terms */ ?>
+<?php /* Template Name: policy */ ?>
 
 <!DOCTYPE html>
 <html>
@@ -14,7 +14,7 @@
         <?php get_header(); ?>
 
         <div class="hero">
-            <h1>Villkor</h1>
+            <h1>Återbetalnings- och returpolicy</h1>
         </div>
 
         <?php
