@@ -229,7 +229,29 @@ outline: 0; background: none; border: 0;
 
 #navbar-brand-id { color: #888}
 
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+  float: left;
+  width: 30%;
+  padding: 1em;
+  margin-left: 100px;
+}
 
+* Menu mobile */
+.primary-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+/* Menu desktop */
+@media (min-width: 992px) {
+  .primary-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+  }
+}
 
 /*--------------------------------------------------------------
 Footer
