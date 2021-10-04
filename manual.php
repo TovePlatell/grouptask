@@ -16,3 +16,9 @@
         <div class="hero">
             <h1>Manual för web-shopen</h1>
         </div>
+
+        <?php
+        the_title();
+        the_content();
+
+        ?>
