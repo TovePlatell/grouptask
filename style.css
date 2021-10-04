@@ -6,11 +6,13 @@ Version: 1.0
 
 
 /*--------------------------------------------------------------
-# General
+#General
 --------------------------------------------------------------*/
 html, body {
 	padding: 0;
 	margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #444;
 	}
 html {
 	font-size: 1em;
@@ -21,15 +23,6 @@ body {
 a img, :link img, :visited img {
 	border: 0;
 	}
-
-
-
-
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #444;
-  
-}
 
 a {
   color: #428bca;
@@ -45,12 +38,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Raleway", sans-serif;
 }
 
-
-
-
 /*--------------------------------------------------------------
-# Sections General
+Sections General
 --------------------------------------------------------------*/
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -77,9 +68,7 @@ section {
 
 .wp-block-group {
   padding: 0 1rem;
-  
 }
-
 
 /***** General style, all sections *****/
 
@@ -88,18 +77,9 @@ section {
 .section-description p { margin-top: 20px; padding: 0 120px; }
 
 
-
-/* ============Header: ==========*/
-
-
-/* body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #263238;
-  line-height: 30px;
-  text-align: center;
-} */
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
 
 strong { font-weight: 500; }
 
@@ -130,16 +110,13 @@ img { max-width: 100%; }
 
 /***** Top menu *****/
 
-
 /*DO NOT ERASE::::*/
 #menu-primary {
   margin: 0; padding: 0; 
-	list-style-type: none; list-style-image: none;
-  
-  /*  list-style: none; */
-  
+	list-style-type: none; list-style-image: none; 
 }
 /*End->DO NOT ERASE::::*/
+
 
 .navbar { margin-bottom: 0; background: #fff; border: 0; border-radius: 0; }
 
@@ -190,7 +167,9 @@ outline: 0; background: none; border: 0;
 
 
 
-/***** Footer *****/
+/*--------------------------------------------------------------
+Footer
+--------------------------------------------------------------*/
 
 footer { padding: 40px 0 45px 0; background: #f8f8f8; }
 
@@ -289,15 +268,8 @@ only screen and (                min-resolution: 2dppx) {
     object-fit: cover;
 }
 
-
-
-
-
-
- 
-
 /*======================
-    404 page
+404 page
 =======================*/
 
 

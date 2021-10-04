@@ -1,4 +1,10 @@
+<?php
 
+/* 
+Template Name: 404
+
+*/
+?>
 
 <section class="page_404">
 	<div class="container">
