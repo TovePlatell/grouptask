@@ -37,16 +37,11 @@
       <div class="row mt-3">
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-          <!-- 
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
- -->
+ 
 
   <!-- Content -->
-  <h6 class="text-uppercase fw-bold mb-4">
-            <i class="fas fa-gem me-3"></i>Happyheads
-          </h6>
+  <h3 class="text-uppercase fw-bold mb-4">Happyheads
+          </h3>
             <p><a>
               Ursula Printz Gata 2 <br>
               18900 Stockholm<br><br>
@@ -56,23 +51,29 @@
             </div>
         <!-- Grid column -->
 
-
-<!-- Grid column -->
+<!-- Grid column -->        
 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
 
 
           <h6 class="text-uppercase fw-bold mb-4">
             Info
-          </h6>
+          </h6>  
 
           <p>
-            <a href="#!" class="text-reset" href="">Kontakta oss</a>
-          </p>
+            <a class="text-reset" href="/kontakt">Kontakta oss</a>
+          </p>  
+
           <p>
-            <a href="#!" class="text-reset">Våra butiker</a>
-          </p>
-          <?php
+            <a href="/terms" class="text-reset">Allmänna Villkor</a>
+          </p>  
+          <p>
+            <a href="/policy" class="text-reset">Retur & Återbetalning</a>
+          </p>  
+          <p>
+            <a href="/stores" class="text-reset">Våra butiker:</a>
+          </p>  
+          <?php          
 
 
 $args = array(  
@@ -82,7 +83,7 @@ $args = array(
     'orderby' => 'title', 
     'order' => 'ASC',
     'cat' => 'home',
-);
+);    
 $loop = new WP_Query( $args ); 
     
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
@@ -90,47 +91,46 @@ while ( $loop->have_posts() ) : $loop->the_post(); ?>
     <a href="<?php the_permalink(); ?>"> <?php echo the_title()?> </a>
    
    
-<?php
+<?php    
 endwhile;
 wp_reset_postdata();
 
 ?>
-          <p>
-            <a href="#!" class="text-reset">Allmänna Villkor</a>
-          </p>
-        </div>
+         
+        </div>  
         <!-- Grid column -->
 
-<!-- Grid column -->
+<!-- Grid column -->        
 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
           <!-- Links -->
           <h6 class="text-uppercase fw-bold mb-4">
             Länkar
-          </h6>
+          </h6>  
           <p>
-            <a href="#!" class="text-reset">Mitt konto</a>
-          </p>
+            <a href="/" class="text-reset">Startsida</a>
+          </p>  
           <p>
-            <a href="#!" class="text-reset">Startsida</a>
-          </p>
+            <a href="/mitt-konto" class="text-reset">Mitt konto</a>
+          </p>  
+          
           <p>
-            <a href="#!" class="text-reset">Shoppen</a>
-          </p>
+            <a href="/butik" class="text-reset">Shoppen</a>
+          </p>  
          
-        </div>
+        </div>  
         <!-- Grid column -->
-
+        
          
          
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Nyhetsbrev</h4>
+      <!--     <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h6>Nyhetsbrev</h6>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Ja, tack!">
             </form>
 
-          </div>
+          </div> -->
 
         </div>
       </div>

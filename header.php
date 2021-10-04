@@ -15,7 +15,7 @@
 <nav class="shadow p-3 mb-5 bg-body rounded navbar navbar-expand-lg navbar-light" style="background-color: secondary;">
 
 <div class="container-fluid">
-	<a><h1>HAPPYHEADS</h1></a>
+	<a><h1 href="<?php echo site_url('/') ?>">HAPPYHEADS</h1></a>
 	
     <!-- <a id= navbar-brand-id class="navbar-brand" href="< ?php echo site_url('/')?>">Happyheads</a> -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,24 +36,7 @@
        
 					
 				</div>
-				<!-- <form class="d-flex input-group w-auto">
-      <input
-        type="search"
-        class="form-control rounded"
-        placeholder="Search"
-        aria-label="Search"
-        aria-describedby="search-addon"
-      />
-      <span class="input-group-text border-0" id="search-addon">
-        <i class="fas fa-search"></i>
-      </span>
-    </form> -->
-				<!--
-				<p class="nav navbar-nav navbar-right navbar-search-button">	
-</p>
-			<form class="d-flex">
-			 < ?php get_search_form(); ?> 
-			</form>-->
+			
 			
 </nav>
 
