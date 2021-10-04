@@ -20,7 +20,6 @@
     <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
 
 
@@ -48,12 +47,12 @@
   <h6 class="text-uppercase fw-bold mb-4">
             <i class="fas fa-gem me-3"></i>Happyheads
           </h6>
-            <p>
+            <p><a>
               Ursula Printz Gata 2 <br>
               18900 Stockholm<br><br>
               <strong>Tel:</strong> +46 123 2344<br>
               <strong>Email:</strong> info@happyheads.com<br>
-            </p>
+            </p></a>
             </div>
         <!-- Grid column -->
 
@@ -68,11 +67,34 @@
           </h6>
 
           <p>
-            <a href="#!" class="text-reset">Om oss</a>
+            <a href="#!" class="text-reset" href="">Kontakta oss</a>
           </p>
           <p>
             <a href="#!" class="text-reset">Våra butiker</a>
           </p>
+          <?php
+
+
+$args = array(  
+    'post_type' => 'stores',
+    'post_status' => 'publish',
+    'posts_per_page' => -1, 
+    'orderby' => 'title', 
+    'order' => 'ASC',
+    'cat' => 'home',
+);
+$loop = new WP_Query( $args ); 
+    
+while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    
+    <a href="<?php the_permalink(); ?>"> <?php echo the_title()?> </a>
+   
+   
+<?php
+endwhile;
+wp_reset_postdata();
+
+?>
           <p>
             <a href="#!" class="text-reset">Allmänna Villkor</a>
           </p>
