@@ -4,30 +4,7 @@
 
 <!-- ======= Footer ======= -->
 <footer id="footer" class="text-center text-lg-start bg-light text-muted">
-  <!-- Section: Social media -->
-  <section
-    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
-  >
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
-
-    <!-- Right -->
-    <div>
-
-    <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-
-
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
-
+ 
    <!-- Section: Links  -->
 
   <section id="footer-wrapper-main">
@@ -71,9 +48,14 @@
             <a href="/policy" class="text-reset">Retur & Återbetalning</a>
           </p>  
           <p>
-            <a href="/stores" class="text-reset">Våra butiker:</a>
+            <a href="/location" class="text-reset">Våra butiker</a>
           </p>  
-          <?php          
+         
+         
+         
+         
+         
+          <!-- < ?php          
 
 
 $args = array(  
@@ -88,14 +70,14 @@ $loop = new WP_Query( $args );
     
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
-    <a href="<?php the_permalink(); ?>"> <?php echo the_title()?> </a>
+    <a href="< ?php the_permalink(); ?>"> <?php echo the_title()?> </a>
    
    
-<?php    
+< ?php    
 endwhile;
 wp_reset_postdata();
 
-?>
+?> -->
          
         </div>  
         <!-- Grid column -->
